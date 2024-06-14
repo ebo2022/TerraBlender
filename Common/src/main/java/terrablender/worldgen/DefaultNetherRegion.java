@@ -31,7 +31,7 @@ import java.util.function.Consumer;
 
 public class DefaultNetherRegion extends Region
 {
-    public static final ResourceLocation LOCATION = new ResourceLocation("minecraft:nether");
+    public static final ResourceLocation LOCATION = ResourceLocation.fromNamespaceAndPath("minecraft", "nether");
 
     public DefaultNetherRegion(int weight)
     {

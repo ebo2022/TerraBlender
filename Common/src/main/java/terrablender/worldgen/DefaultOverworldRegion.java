@@ -31,7 +31,7 @@ import java.util.function.Consumer;
 
 public class DefaultOverworldRegion extends Region
 {
-    public static final ResourceLocation LOCATION = new ResourceLocation("minecraft:overworld");
+    public static final ResourceLocation LOCATION = ResourceLocation.fromNamespaceAndPath("minecraft", "overworld");
 
     public DefaultOverworldRegion(int weight)
     {

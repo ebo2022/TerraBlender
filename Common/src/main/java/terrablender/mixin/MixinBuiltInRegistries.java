@@ -49,7 +49,7 @@ public abstract class MixinBuiltInRegistries
                 bootstrap.run(registry);
 
                 // Run our bootstrap
-                return Registry.register(registry, new ResourceLocation(TerraBlender.MOD_ID, "merged"), NamespacedSurfaceRuleSource.CODEC.codec());
+                return Registry.register(registry, ResourceLocation.fromNamespaceAndPath(TerraBlender.MOD_ID, "merged"), NamespacedSurfaceRuleSource.CODEC.codec());
             })));
         }
     }

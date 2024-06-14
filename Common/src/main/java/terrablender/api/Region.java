@@ -38,7 +38,7 @@ import java.util.function.Consumer;
 public abstract class Region
 {
     /* A resource key used to indicate that biome selection should be deferred to Vanilla's region. */
-    public static final ResourceKey<Biome> DEFERRED_PLACEHOLDER = ResourceKey.create(Registries.BIOME, new ResourceLocation(TerraBlender.MOD_ID, "deferred_placeholder"));
+    public static final ResourceKey<Biome> DEFERRED_PLACEHOLDER = ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath(TerraBlender.MOD_ID, "deferred_placeholder"));
 
     private final ResourceLocation name;
     private RegionType type;
