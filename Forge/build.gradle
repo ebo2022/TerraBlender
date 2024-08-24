@@ -95,6 +95,7 @@ curseforge {
 
         releaseType = release_channel
         addGameVersion minecraft_version
+        addGameVersion '1.21.1'
 
         mainArtifact(jar) {
             displayName = "TerraBlender Forge ${version}"
@@ -109,7 +110,7 @@ modrinth {
     versionName = mod_version + " for Forge " + minecraft_version
     versionType = release_channel // can be release, beta, or alpha
     uploadFile = jar
-    gameVersions = [minecraft_version]
+    gameVersions = [minecraft_version, '1.21.1']
     loaders = ['forge']
 
     if (changelog_file.exists()) {

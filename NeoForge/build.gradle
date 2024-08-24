@@ -72,6 +72,7 @@ curseforge {
 
         releaseType = release_channel
         addGameVersion minecraft_version
+        addGameVersion '1.21.1'
         addGameVersion 'NeoForge' // NeoForge isn't auto-detected and must be manually specified
 
         mainArtifact(jar) {
@@ -87,7 +88,7 @@ modrinth {
     versionName = mod_version + " for NeoForge " + minecraft_version
     versionType = release_channel // can be release, beta, or alpha
     uploadFile = jar
-    gameVersions = [minecraft_version]
+    gameVersions = [minecraft_version, '1.21.1']
     loaders = ['neoforge']
 
     if (changelog_file.exists()) {
